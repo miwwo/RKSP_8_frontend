@@ -1,10 +1,9 @@
 import React from 'react';
-import RecipeList from "../components/RecipeComponents/RecipeList";
 
 const Home = () => {
     return (
         <div>
-            <RecipeList/>
+           <h1>Hello! It is public page!</h1>
         </div>
     );
 };

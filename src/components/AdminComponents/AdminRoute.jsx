@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const AdminRoute = ({children}) => {
@@ -8,7 +8,7 @@ const AdminRoute = ({children}) => {
         return <>{children}</>;
     }
     else
-        return <Navigate to="/login" />;
+        return <Navigate to="/NoPermission" />;
 };
 
 export default AdminRoute;

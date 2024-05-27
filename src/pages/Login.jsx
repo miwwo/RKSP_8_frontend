@@ -62,7 +62,7 @@ const Login = (props) => {
             </form>
             {errMsg && <p className="error">{errMsg}</p>}
             <p className="register-link">
-                Еще не зарегистрирован?&nbsp;
+                Нет аккаунта?&nbsp;
                 <Link to="/register">Зарегистрироваться</Link>
             </p>
         </div>

@@ -4,7 +4,6 @@
   max-width: 400px;
   margin: auto;
   padding: 1rem;
-  background-color: #f5f5dc; /* светлый бежевый фон */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -15,38 +14,16 @@
   align-items: center;
 }
 
-.form-signin h1 {
-  color: #6b4f4f; /* темный пастельный цвет для заголовка */
-}
-
 .form-signin .form-control {
   width: 100%;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 5px; /* Округляем углы */
   transition: border-color 0.3s, box-shadow 0.3s;
   background-clip: padding-box; /* Убедимся, что границы округляются */
 }
 
-.form-signin .form-control:focus {
-  border-color: #c9a87c; /* цвет границы при фокусе */
-  box-shadow: 0 0 5px rgba(201, 168, 124, 0.5); /* тень при фокусе */
-  outline: none; /* убрать стандартное голубое выделение */
-}
-
-.form-signin .btn {
-  background-color: #deb887; /* цвет кнопки */
-  border: none;
-  color: white;
-  border-radius: 5px;
-  padding: 0.5rem 0;
-  transition: background-color 0.3s;
-}
-
-.form-signin .btn:hover {
-  background-color: #c9a87c; /* цвет кнопки при наведении */
-}
 
 .error {
   color: red !important;
@@ -56,11 +33,9 @@
 
 .form-signin p {
   margin-top: 1rem;
-  color: #6b4f4f; /* цвет текста */
 }
 
 .form-signin p a {
-  color: #deb887; /* цвет ссылки */
   text-decoration: none;
 }
 

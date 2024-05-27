@@ -7,10 +7,9 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import {useSelector} from "react-redux";
 import PrivateRoute from "./components/PrivateRoute";
-import CurrentShoppingList from "../src/components/profile/CurrentShoppingList";
-import UserRecipe from "./components/profile/UserRecipe";
 import AdminRoute from "./components/AdminComponents/AdminRoute";
 import AdminPanel from "./components/AdminComponents/AdminPanel";
+import NoPermission from "./components/NoPermission";
 
 function App() {
     const user = useSelector(state => state.user);
@@ -19,7 +18,6 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <Nav email={user.email} setEmail={user.email} roles={user.roles}/>
-
                 <main>
                     <Routes>
                         <Route
@@ -31,18 +29,10 @@ function App() {
                             }
                         />
                         <Route
-                            path="/shopping-list"
+                            path="/NoPermission"
                             element={
                                 <PrivateRoute>
-                                    <CurrentShoppingList/>
-                                </PrivateRoute>
-                            }
-                        />
-                        <Route
-                            path="/profile/recipes"
-                            element={
-                                <PrivateRoute>
-                                    <UserRecipe/>
+                                    <NoPermission/>
                                 </PrivateRoute>
                             }
                         />

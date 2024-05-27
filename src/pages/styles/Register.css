@@ -2,7 +2,6 @@
     max-width: 400px;
     margin: auto;
     padding: 1rem;
-    background-color: #f5f5dc; /* светлый бежевый фон */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -13,9 +12,6 @@
     align-items: center;
 }
 
-.register-header {
-    color: #6b4f4f; /* темный пастельный цвет для заголовка */
-}
 
 .register-input {
     width: 100%;
@@ -26,24 +22,6 @@
     background-clip: padding-box;
 }
 
-.register-input:focus {
-    border-color: #c9a87c;
-    box-shadow: 0 0 5px rgba(201, 168, 124, 0.5);
-    outline: none;
-}
-
-.register-button {
-    background-color: #deb887;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    padding: 0.5rem 0;
-    transition: background-color 0.3s;
-}
-
-.register-button:hover {
-    background-color: #c9a87c;
-}
 
 .error {
     color: red !important;
@@ -53,11 +31,9 @@
 
 .login-link {
     margin-top: 1rem;
-    color: #6b4f4f; /* цвет текста */
 }
 
 .login-link a {
-    color: #deb887;
     text-decoration: none;
 }
 

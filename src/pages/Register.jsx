@@ -66,7 +66,7 @@ const Register = () => {
             {errMsg && <p className="error">{errMsg}</p>}
             <p className="login-link">
                 Уже есть аккаунт?&nbsp;
-                <Link to="/login">Залогинься</Link>
+                <Link to="/login">Войти в аккаунт</Link>
             </p>
         </div>
     );
